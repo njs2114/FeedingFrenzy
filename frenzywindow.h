@@ -16,6 +16,11 @@ public:
     explicit FrenzyWindow(QWidget *parent = 0);
     ~FrenzyWindow();
     
+private slots:
+    void on_exitButton_clicked();
+
+    void on_actionExit_triggered();
+
 private:
     Ui::FrenzyWindow *ui;
     Frenzy f;
